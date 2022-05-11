@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  cloudsmithcli:
+    build:
+      context: .
+    container_name: ccli
+    volumes:
+      - type: bind
+        source: $PWD
+        target: /app
